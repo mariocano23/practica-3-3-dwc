@@ -2,7 +2,7 @@
 
 var doc = window.document;
 
-function eliminarTareas() {
+function eliminarTareas() { //Función que elimina las tareas que ya están el HTML.
     let tareas = doc.getElementsByClassName("tarea");
     while (tareas.length>0) {
         console.log(tareas[0]);
