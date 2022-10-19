@@ -47,6 +47,7 @@ function añadir() { //Función que recoge el texto de la textarea, crea una tar
         doc.getElementById("tareas").appendChild(msgError);
         }  
     }
+    textarea.value="";
     
 }
 
