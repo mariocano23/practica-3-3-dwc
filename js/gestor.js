@@ -5,12 +5,10 @@ var doc = window.document;
 function eliminarTareas() { //Función que elimina las tareas que ya están el HTML.
     let tareas = doc.getElementsByClassName("tarea");
     while (tareas.length>0) {
-        console.log(tareas[0]);
         tareas[0].remove();
     }
     let acabadas = doc.getElementsByClassName("acabada");
     while (acabadas.length>0) {
-        console.log(acabadas[0]);
         acabadas[0].remove();
     }
 }
@@ -89,7 +87,6 @@ function archivar(id) {//Función que oculta la tarea acabada que quieras.
 function mostrar() { //Función para mostrar las tareas archivadas.
     let desaparecidos = doc.getElementsByClassName("archivado");
     while (desaparecidos.length>0) {
-        console.log(desaparecidos[0]);
         desaparecidos[0].classList.remove("archivado");
     }
 }
