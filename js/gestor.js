@@ -2,6 +2,19 @@
 
 var doc = window.document;
 
+function eliminarTareas() {
+    let tareas = doc.getElementsByClassName("tarea");
+    while (tareas.length>0) {
+        console.log(tareas[0]);
+        tareas[0].remove();
+    }
+    let acabadas = doc.getElementsByClassName("acabada");
+    while (acabadas.length>0) {
+        console.log(acabadas[0]);
+        acabadas[0].remove();
+    }
+}
+
 function cuentaElementos(elemento) { //Función para obtener el número de un tipo de elemento en un HTML.
     let elementos = doc.querySelectorAll(elemento);
     return elementos.length;
@@ -80,4 +93,5 @@ function mostrar() { //Función para mostrar las tareas archivadas.
     }
 }
 
+eliminarTareas();
 
